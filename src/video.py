@@ -1,6 +1,7 @@
 import picamera
 import socket
 import uuid
+import os
 from datetime import datetime as dt
 
 qual=22 # level of image quality between 1 (highest quality, largest size) and 40 (lowest quality, smallest size), with typical values 20 to 25, default is 0.
@@ -18,7 +19,7 @@ with picamera.PiCamera() as camera:
     camera.annotate_foreground = picamera.Color('white') # text colour
 
     for filename in camera.record_sequence([
-        '/home/pi/record/'+HostName+'_'+UID+'_%03d.h264' % (h + 1)
+        '/home/'+os.getlogin()+'/record/'+HostName+'_'+UID+'_%03d.h264' % (h + 1)
         for h in range(video_number)
         ], quality=qual):
 
