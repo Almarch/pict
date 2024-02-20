@@ -7,8 +7,8 @@ from datetime import datetime as dt
 qual=22 # level of image quality between 1 (highest quality, largest size) and 40 (lowest quality, smallest size), with typical values 20 to 25, default is 0.
 video_duration = 3600 # video duration in seconds
 video_number = 1000 # number of video sequences to shoot
-UID = uuid.uuid4().hex[:4].upper()+'_'+dt.now().strftime('%Y-%m-%d_%H-%M') # generate random unique ID that will be used in video filename
 HostName=socket.gethostname()
+path = '/home/'+os.getlogin()+'/record/'+HostName+uuid.uuid4().hex[:4].upper()+'_'+dt.now().strftime('%Y-%m-%d_%H-%M') # generate random unique ID that will be used in video filename
 
 with picamera.PiCamera() as camera:
     camera.resolution = (1296, 972) # max is 1664x1248
@@ -19,7 +19,7 @@ with picamera.PiCamera() as camera:
     camera.annotate_foreground = picamera.Color('white') # text colour
 
     for filename in camera.record_sequence([
-        '/home/'+os.getlogin()+'/record/'+HostName+'_'+UID+'_%03d.h264' % (h + 1)
+        path+'_%03d.h264' % (h + 1)
         for h in range(video_number)
         ], quality=qual):
 
