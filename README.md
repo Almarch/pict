@@ -48,7 +48,7 @@ From a desktop computer, install [Raspberry Pi Imager](https://raspberrypi.com/s
 
 ### Set up the Raspberry board
 
-Once the SD card has been written, insert it within the Raspberry Pi Zero board. Connect to the board your screen (using the micro HDMI-to-HDMI adapter), your mouse and keyboard (using the micro USB-to-USB adapter, beware to use the "USB" port and not the "PWR" one), the camera (using the flat cable). Beware the camera flat cable is in the right sense, the IR LED should glow when it is properly plugged. Finally, power the board with from the "PWR" micro USB port.
+Once the SD card has been written, insert it within the Raspberry Pi Zero board. Connect to the board your screen (using the micro HDMI-to-HDMI adapter), your mouse and keyboard (using the micro USB-to-USB adapter, beware to use the "USB" port and not the "PWR" one), the camera (using the flat cable). Beware the camera flat cable is plugged on the right side, the IR LED should glow when it is properly plugged. Finally, power the board with from the "PWR" micro USB port.
 
 ![](img/desktop_setup.jpg)
 
@@ -82,9 +82,9 @@ git clone https://github.com/almarch/pict.git
 
 Now that we have a working prototype, the next step will be to clone it to as many PICT as needed.
 
-The hardware of each PICT has to be build as described in the doc file.
+The hardware of each PICT has to be built as described in the doc file.
 
-The software can be cloned from one SD card to the user using (...).
+The software can be cloned from one SD card to the other using (...).
 
 ## Smartphone connectivity
 
