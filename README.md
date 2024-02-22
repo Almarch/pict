@@ -48,11 +48,11 @@ From a desktop computer, install [Raspberry Pi Imager](https://raspberrypi.com/s
 
 ### Set up the Raspberry board
 
-Once the SD card has been written, insert it within the Raspberry Pi Zero board. Connect to the board your screen (using the micro HDMI-to-HDMI adapter), your mouse and keyboard (using the micro USB-to-USB adapter, beware to use the "USB" port and not the "PWR" one), the camera (using the flat cable). Beware the camera flat cable is in the right sense, the IR LED should glow when it is properly plugged. Finally, power the board with from the "PWR" micro USB port.
+Once the SD card has been written, insert it within the Raspberry Pi Zero board. Connect to the board your screen (using the micro HDMI-to-HDMI adapter), your mouse and keyboard (using the micro USB-to-USB adapter, beware to use the "USB" port and not the "PWR" one), the camera (using the flat cable). Beware the camera flat cable is plugged on the right side, the IR LED should glow when it is properly plugged. Finally, power the board from the "PWR" micro USB port.
 
 ![](img/desktop_setup.jpg)
 
-You will have to parameterize the OS installation, which is straightforward. I suggest using the English language as all documentation and help will be found using English keywords and error messages. Provide the wifi ID and password at the installation step so that the software will be updated right ahead.
+The next step is to parameterize the OS installation. It is easier to stick to English language as all documentation and help will be found in English. Provide the wifi ID and password at the installation step so that the software will be updated right ahead.
 
 Once the OS is installed, the board launches as a regular desktop computer. If you use a non-qwerty keyboard, set it up as a first step. Go to the Raspberry starter (logo) / Preferences / Keyboard and mouse / Keyboard / Layout and select the appropriate layout.
 
@@ -158,9 +158,9 @@ Beware that the board is not reachable from the web, only in local connection. T
 
 Now that we have a working prototype, the next step will be to clone it to as many PICT as needed.
 
-The hardware of each PICT has to be build as described in the doc file.
+The hardware of each PICT has to be built as described in the doc file.
 
-The software can be cloned from one SD card to the user using (...).
+The software can be cloned from one SD card to the other using (...).
 
 ## Post-hoc analysis
 
